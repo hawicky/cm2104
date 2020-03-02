@@ -1,3 +1,5 @@
+
+
 /* The sidebar menu */
 .sidebar {
     height: 100%; /* 100% Full-height */
@@ -10,6 +12,7 @@
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    
   }
   
   /* The sidebar links */
@@ -17,7 +20,7 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #0ae44b;
+    color: white;
     display: block;
     transition: 0.3s;
   }
@@ -63,6 +66,42 @@
   }
 
 
+.banner {
+   
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    top: 0px;
+    z-index: -1;
+    
+   }
+
+a {
+    font-family: 'Montserrat', serif ;
+}
+
+body {
+    background:#000 url("http://www.script-tutorials.com/demos/360/images/stars.png");
+}
+
+p {
+    color:white;
+}
 
 
+
+
+
+
+/* login section stuff */
+.title {
+  font-size: 32px;
+}
+
+.login-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+    
   
