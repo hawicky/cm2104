@@ -93,9 +93,12 @@ p {
 
 
 
-/* login section stuff */
+/*    login/register css     */
+
 .title {
   font-size: 32px;
+  font-family: 'Montserrat', serif ;
+  color:white;
 }
 
 .login-section {
@@ -103,5 +106,25 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
     
+
+
+
+.spacingDiv {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-style: solid;
+  border-radius: 100px;
+  border-color: #BFBFBF;
+  border-width: 1.5px;
+  margin: 5px;
+  padding-left: 15px; 
+}
+
+
+
+
+
   

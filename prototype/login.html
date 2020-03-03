@@ -4,7 +4,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>NASA TRACKER</title>
+        <title>NEAR EARTH OBJECT TRACKER</title>
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
     <body>
 
             <div id="mySidebar" class="sidebar">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
               <a href="index.html">Home</a>
               <a href="login.html">Register/Login</a>
               <a href="#">More Info</a>
@@ -44,11 +44,61 @@
         <img src="images/NEtrackerBanner.png" alt="NEO tracker" class="banner">
         
         
-        <section class="login-section">
+
+
+  
+    <!-- Login & Register section -->
+        
+    <section class="login-section">
+        
+      <!-- Login -->
+      <article class="login-box">
+
+        <h class="title">Login</h>
+
+        <form class="" action="/userNew"  method="post">
             
-        </section>
+            <div class="spacingDiv">
+                
+            <input type="text" name="username" class="input" placeholder="Username">
+                
+            </div>
+            
+            
+            <div class="spacingDiv">
+            <input type="password" name="password" class="input" placeholder="Password">
+            </div>
+            <input type="submit" name="loginBtn" value="Login">
+            
+        </form>
+
+      </article>
+
+
+
+      <!-- Register -->
+        
+      <article class="login-box">
+
+        <h class="title">Register</h>
+
+        <form class="" action="/userNew"  method="post">
+            <div class="spacingDiv">            
+            <input type="text" name="username" class="input" placeholder="New Username">
+            </div>
+
+            <div class="spacingDiv">            
+            <input type="password" name="password" class="input" placeholder="Password">
+            </div>
+            <input type="submit" name="loginBtn" value="Login">
+            
+        </form>
+
+      </article>
           
         
+        </section>
         
-        </body>
+    </body>
+    
 </html>
