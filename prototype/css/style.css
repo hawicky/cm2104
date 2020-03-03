@@ -76,6 +76,14 @@
     
    }
 
+.subheading {
+    display:block;
+    text-align:center;
+    font-family: 'Montserrat', serif ;
+    font-size: 40px;
+    color: white;
+}
+
 a {
     font-family: 'Montserrat', serif ;
 }
