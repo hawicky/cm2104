@@ -1,6 +1,4 @@
-<!doctype html>
-
- <html class="no-js" lang="en">
+<html class="no-js" lang="en">
 
     <head>
         <meta charset="utf-8">
@@ -21,7 +19,6 @@
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
               <a href="index.html">Home</a>
               <a href="login.html">Register/Login</a>
-              <a href="facts.html">Neo facts</a>
               <a href="#">More Info</a>
             </div>
             
@@ -41,6 +38,11 @@
               document.getElementById("mySidebar").style.width = "0";
               document.getElementById("main").style.marginLeft= "0";
             }
+            
+            
+            function myFunction() {
+              document.getElementById("Asteroid").innerHTML = "Asteroids are minor planets, especially of the inner Solar System.Larger asteroids have also been called planetoids. These terms have historically been applied to any astronomical object orbiting the Sun that did not resolve into a disc in a telescope and was not observed to have characteristics of an active comet such as a tail. As minor planets in the outer Solar System were discovered that were found to have volatile-rich surfaces similar to comets, these came to be distinguished from the objects found in the main asteroid belt";
+            }
             </script>
         
         
@@ -54,8 +56,16 @@
           <div id="mainContent">
               
         </div>
-          
+       
+            
         
+        <div class = "factContainer">
+            <img src="Asteroid.jpg" alt="Snow" style="width:100%">
+            <button class ="btn" onclick="myFunction()">Click me</button>    
+        </div>
+        
+
+            <p id="Asteroid"></p>
         
         </body>
 </html>
