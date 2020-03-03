@@ -118,21 +118,38 @@ p {
     
 
 
+.login-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
 
 .spacingDiv {
   display: flex;
   align-items: center;
   height: 40px;
   border-style: solid;
-  border-radius: 100px;
-  border-color: #BFBFBF;
+  border-radius: 50px;
+  border-color: #ffffff;
   border-width: 1.5px;
   margin: 5px;
   padding-left: 15px; 
 }
 
 
+/*  */
+/* vertical seperation */
+.vSeperator {
+  border-left: 2px solid #ffffff;
+  margin-left: 60px;
+  margin-right: 60px;
+  height: 250px;
+}
 
-
-
-  
+/* horizontal seperation on login page */
+.hSeperator {
+  margin-top: 150px;
+}
