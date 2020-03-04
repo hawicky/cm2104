@@ -151,9 +151,7 @@ p {
     font-size:20px;
 }
 
-.flip {
-    
-}
+
 
 
 /*    login/register css     */
@@ -177,7 +175,7 @@ p {
 
 
 
-.spacingDiv {
+.inputBorders {
   display: flex;
   align-items: center;
   height: 40px;
@@ -195,10 +193,11 @@ p {
 /*  */
 /* vertical seperation */
 .vSeperator {
-  border-left: 2px solid #ffffff;
+  height: 250px;
+  border-left: 3px solid rgb(255, 255, 255);  
+  border-left: 3px solid rgba(255, 255, 255, .5);
   margin-left: 60px;
   margin-right: 60px;
-  height: 250px;
 }
 
 /* horizontal seperation on login page */
