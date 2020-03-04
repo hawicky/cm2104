@@ -159,7 +159,7 @@ p {
 /*    login/register css     */
 
 .title {
-  font-size: 32px;
+  font-size: 42px;
   font-family: 'Montserrat', serif ;
   color:white;
 }
@@ -187,4 +187,98 @@ p {
 }
 
 
+<<<<<<< HEAD
   
+=======
+
+/*  */
+/* vertical seperation */
+.vSeperator {
+  border-left: 2px solid #ffffff;
+  margin-left: 60px;
+  margin-right: 60px;
+  height: 250px;
+}
+
+/* horizontal seperation on login page */
+.hSeperator {
+  margin-top: 150px;
+}
+
+/* css for fact page */
+
+.factWrapper {
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+.factContainer {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  align-items:center;
+}
+
+.factContainer img {
+  width: 100%;
+  height: auto;
+}
+
+.factContainer .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.factContainer .btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.Asteroid {
+    grid-template-columns:30%;
+}
+
+
+
+.input {
+  height: 80%;
+  background-color: transparent;
+  border: transparent;  
+  outline: none;
+  color:white;  
+  font-family: 'Montserrat', serif ;
+  font-size: 30px;
+} 
+    
+    
+
+    
+input[type=submit] {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  outline:none; 
+  align-items: center;
+  justify-content: center;  
+  font-family: 'Montserrat', serif ;
+  font-size: 30px;
+  background-color: transparent;  
+  color: #FFFFFF;
+  border-radius: 50px;
+    
+    
+}
+
+>>>>>>> 3180e5dc1e4e6f01341e9a34061f39aaad9adff9
