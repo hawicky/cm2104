@@ -16,7 +16,6 @@
 
 
     <body>
-
             <div id="mySidebar" class="sidebar">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
               <a href="index.html">Home</a>
@@ -46,15 +45,87 @@
         <img src="images/NEOtracker.png" alt="NEO tracker banner" class="banner">
         
         
-        <div id="NEOdescription" class="subheading">
+            
+        
+        <div id="NEOdescription" class="heading">
             NASA Near Earth Object Tracker
+        </div>     
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        
+        <div id="nextNEO" class="subheading">
+            The nearest Close Approach Object:
+        </div>     
+
+        <!-- Infobox wrapper -->
+        
+        <div id="txtboxWrapper" class="wrapper">
+            
+            <!--Close Approach info boxes -->
+            <div id="name" class="infobox">
+                CM-2020
+            </div>
+            <div id="closestdistance" class="infobox">
+                3.5LD
+            </div>
+            <div id="velocity" class="infobox">
+                20km/s
+            </div>
+            <div id="estimatedSize" class="infobox">
+                20-40m
+            </div>
+            <div id="tMinus" class="infobox">
+                <script>
+                    // Set the date we're counting down to
+                    var countDownDate = new Date("April 20, 2020 15:37:25").getTime();
+                    
+                    // Update the count down every 1 second
+                    var x = setInterval(function() {
+                    
+                      // Get today's date and time
+                      var now = new Date().getTime();
+                    
+                      // Find the distance between now and the count down date
+                      var distance = countDownDate - now;
+                    
+                      // Time calculations for days, hours, minutes and seconds
+                      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                      // Display the result in the element with id="demo"
+                      document.getElementById("tMinus").innerHTML = days + "D " + hours + "H "
+                      + minutes + "M " + seconds + "S ";
+
+                      // If the count down is finished, write some text
+                      if (distance < 0) { 
+                        clearInterval(x);
+                        document.getElementById("tMinus").innerHTML = "EXPIRED";
+                      }
+                    }, 1000);
+                </script>
+            </div>
         </div>
-        
-          <div id="mainContent">
-              
+        <!-- Labels for infoboxes -->
+        <div id="txtWrapper" class="wrapper">        
+        <div id="TXTname" class="info">
+                Asteroid/Object name
+            </div>
+            <div id="txtClosestdistance" class="info">
+                Closest distance
+            </div>
+            <div id="txtVelocity" class="info">
+                Relative Velocity
+            </div>
+            <div id="txtEstimatedSize" class="info">
+                Estimated Size
+            </div>
+            <div id="txtTMinus" class="info">
+                ETA Closest distance
+            </div>
         </div>
-          
-        
-        
         </body>
 </html>
