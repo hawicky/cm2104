@@ -162,6 +162,9 @@ p {
   font-size: 42px;
   font-family: 'Montserrat', serif ;
   color:white;
+  align-items: center;
+  justify-content: center;
+    
 }
 
 .login-section {
@@ -187,9 +190,7 @@ p {
 }
 
 
-<<<<<<< HEAD
-  
-=======
+
 
 /*  */
 /* vertical seperation */
@@ -263,9 +264,17 @@ p {
 } 
     
     
+.login-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
     
 input[type=submit] {
+    
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
@@ -277,8 +286,6 @@ input[type=submit] {
   background-color: transparent;  
   color: #FFFFFF;
   border-radius: 50px;
-    
-    
+     
 }
 
->>>>>>> 3180e5dc1e4e6f01341e9a34061f39aaad9adff9
