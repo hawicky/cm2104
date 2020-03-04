@@ -72,17 +72,27 @@
     margin-left:auto;
     margin-right:auto;
     top: 0px;
-    z-index: -1;
+   
     
    }
+
+.heading {
+    display:block;
+    text-align:center;
+    font-family: 'Montserrat', serif ;
+    font-size: 50px;
+    color: white;
+}
 
 .subheading {
     display:block;
     text-align:center;
     font-family: 'Montserrat', serif ;
-    font-size: 40px;
+    font-size: 32px;
     color: white;
 }
+
+
 
 a {
     font-family: 'Montserrat', serif ;
@@ -98,7 +108,39 @@ p {
 
 
 
+.wrapper {
+    text-align:center;    
+}
 
+
+.infobox {
+   
+    display:inline-block;
+    width: 250px;
+    height: 200px;
+    border-radius:20px;
+    border: 2px solid white;
+    color: white;
+    margin:20px;
+    font-family: 'Montserrat', serif ;
+    font-size:24px;
+    text-align:center;
+    line-height:200px;
+}
+
+
+.info {
+    
+    display:inline-block;
+    width:250px;
+    height:40px;
+    color:white;
+    margin-left:20px;
+    margin-right:20px;
+    font-family: 'Montserrat', serif ;
+    text-align:center;
+    font-size:20px;
+}
 
 
 /*    login/register css     */
@@ -138,6 +180,7 @@ p {
   margin: 5px;
   padding-left: 15px; 
 }
+
 
 
 /*  */
