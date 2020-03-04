@@ -12,9 +12,9 @@
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-    
+
   }
-  
+
   /* The sidebar links */
   .sidebar a {
     padding: 8px 8px 8px 32px;
@@ -24,12 +24,12 @@
     display: block;
     transition: 0.3s;
   }
-  
+
   /* When you mouse over the navigation links, change their color */
   .sidebar a:hover {
     color: #f1f1f1;
   }
-  
+
   /* Position and style the close button (top right corner) */
   .sidebar .closebtn {
     position: absolute;
@@ -38,7 +38,7 @@
     font-size: 36px;
     margin-left: 50px;
   }
-  
+
   /* The button used to open the sidebar */
   .openbtn {
     font-size: 20px;
@@ -48,17 +48,17 @@
     padding: 10px 15px;
     border: none;
   }
-  
+
   .openbtn:hover {
     background-color: #444;
   }
-  
+
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main {
     transition: margin-left .5s; /* If you want a transition effect */
     padding: 20px;
   }
-  
+
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
@@ -67,13 +67,13 @@
 
 
 .banner {
-   
+
     display:block;
     margin-left:auto;
     margin-right:auto;
     top: 0px;
-   
-    
+
+
    }
 
 .heading {
@@ -113,17 +113,17 @@ p {
     margin-right:auto;
     margin-top:2%;
     margin-bottom:2%;
-    
-    
+
+
 }
 
 .wrapper {
-    text-align:center;    
+    text-align:center;
 }
 
 
 .infobox {
-   
+
     display:inline-block;
     width: 250px;
     height: 200px;
@@ -139,7 +139,7 @@ p {
 
 
 .info {
-    
+
     display:inline-block;
     width:250px;
     height:40px;
@@ -162,7 +162,7 @@ p {
   color:white;
   align-items: center;
   justify-content: center;
-    
+
 }
 
 .login-section {
@@ -171,7 +171,7 @@ p {
   justify-content: center;
   align-items: center;
 }
-    
+
 
 
 
@@ -184,7 +184,7 @@ p {
   border-color: #BFBFBF;
   border-width: 1.5px;
   margin: 5px;
-  padding-left: 15px; 
+  padding-left: 15px;
 }
 
 
@@ -194,7 +194,7 @@ p {
 /* vertical seperation */
 .vSeperator {
   height: 250px;
-  border-left: 3px solid rgb(255, 255, 255);  
+  border-left: 3px solid rgb(255, 255, 255);
   border-left: 3px solid rgba(255, 255, 255, .5);
   margin-left: 60px;
   margin-right: 60px;
@@ -255,14 +255,14 @@ p {
 .input {
   height: 80%;
   background-color: transparent;
-  border: transparent;  
+  border: transparent;
   outline: none;
-  color:white;  
+  color:white;
   font-family: 'Montserrat', serif ;
   font-size: 30px;
-} 
-    
-    
+}
+
+
 .login-box {
   display: flex;
   flex-direction: column;
@@ -271,22 +271,20 @@ p {
   margin-bottom: 20px;
 }
 
-    
+
 input[type=submit] {
-    
+
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
-  outline:none; 
+  outline:none;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
   font-family: 'Montserrat', serif ;
   font-size: 30px;
-  background-color: transparent;  
+  background-color: transparent;
   color: #FFFFFF;
   border-radius: 50px;
-     
-}
 /*--------------------------------------------------------------------------------------------------------*/
 }
 .FlipCard {
@@ -328,4 +326,9 @@ input[type=submit] {
 .FlipCardFront {
 
   color: white;
+}
+
+.FlipCardBack {
+  color: white;
+  transform: rotateY(180deg);
 }
