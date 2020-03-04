@@ -104,7 +104,7 @@ p {
 /*    login/register css     */
 
 .title {
-  font-size: 32px;
+  font-size: 42px;
   font-family: 'Montserrat', serif ;
   color:white;
 }
@@ -198,3 +198,35 @@ p {
 .Asteroid {
     grid-template-columns:30%;
 }
+
+
+
+.input {
+  height: 80%;
+  background-color: transparent;
+  border: transparent;  
+  outline: none;
+  color:white;  
+  font-family: 'Montserrat', serif ;
+  font-size: 30px;
+} 
+    
+    
+
+    
+input[type=submit] {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  outline:none; 
+  align-items: center;
+  justify-content: center;  
+  font-family: 'Montserrat', serif ;
+  font-size: 30px;
+  background-color: transparent;  
+  color: #FFFFFF;
+  border-radius: 50px;
+    
+    
+}
+

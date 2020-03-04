@@ -2,106 +2,116 @@
 
 <html class="no-js" lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <title>NEAR EARTH OBJECT TRACKER</title>
-        
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-        
-        <!-- CSS Stylesheets -->
-        <link rel="stylesheet" href="css/style.css">
+<head>
+    <meta charset="utf-8">
+    <title>NEAR EARTH OBJECT TRACKER</title>
 
-    </head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
-    
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
 
-    <body>
+</head>
 
-            <div id="mySidebar" class="sidebar">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
-              <a href="index.html">Home</a>
-              <a href="login.html">Register/Login</a>
-              <a href="#">More Info</a>
-              <a href="facts.html">Facts</a>                
-            </div>
-            
-            <div id="main">
-              <button class="openbtn" onclick="openNav()">☰</button>  
-            </div>
-            
-            <script>
-            function openNav() {
-              document.getElementById("mySidebar").style.width = "250px";
-              document.getElementById("main").style.marginLeft = "250px";
-            }
-            
-            function closeNav() {
-              document.getElementById("mySidebar").style.width = "0";
-              document.getElementById("main").style.marginLeft= "0";
-            }
-            </script>
-        
-        
-        <img src="images/NEOtracker.png" alt="NEO tracker" class="banner">
-        
-        
-  <section class="hSeperator">
 
-  
-    <!-- Login & Register section -->
-        
-    <section class="login-section">
-        
-      <!-- Login -->
-      <article class="login-box">
 
-        <h class="title">Login</h>
+<body>
 
-        <form class="" action="/userNew"  method="post">
-            
-            <div class="spacingDiv">
-                
-            <input type="text" name="username" class="input" placeholder="Username">
-                
-            </div>
-            
-            
-            <div class="spacingDiv">
-            <input type="password" name="password" class="input" placeholder="Password">
-            </div>
-            <input type="submit" name="loginBtn" value="Login">
-            
-        </form>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+        <a href="index.html">Home</a>
+        <a href="login.html">Register/Login</a>
+        <a href="#">More Info</a>
+        <a href="facts.html">Facts</a> 
+    </div>
 
-      </article>
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰</button>
+    </div>
 
-        <div class="vSeperator"></div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
 
-      <!-- Register -->
-        
-      <article class="login-box">
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
 
-        <h class="title">Register</h>
 
-        <form class="" action="/userNew"  method="post">
-            <div class="spacingDiv">            
-            <input type="text" name="username" class="input" placeholder="New Username">
-            </div>
+    <img src="images/NEOtracker.png" alt="NEO tracker" class="banner">
 
-            <div class="spacingDiv">            
-            <input type="password" name="password" class="input" placeholder="Password">
-            </div>
-            
-            <input type="submit" name="registerBtn" value="Register">
-            
-        </form>
 
-      </article>
-          
-        
+    <section class="hSeperator">
+
+
+        <!-- Login & Register section -->
+
+        <section class="login-section">
+
+            <!-- Login -->
+            <article class="login-box">
+
+                <h class="title">Login</h>
+
+                <form class="" action="/userNew" method="post">
+
+                    <div class="spacingDiv">
+
+                        <input type="text" name="username" class="input" placeholder="Username">
+
+                    </div>
+                    
+                    <br>
+
+
+                    <div class="spacingDiv">
+                        <input type="password" name="password" class="input" placeholder="Password">
+                    </div>
+                    
+                    <br>
+                    
+                    <input type="submit" class="loginBtn" value="Login">
+
+                </form>
+
+            </article>
+
+            <div class="vSeperator"></div>
+
+            <!-- Register -->
+
+            <article class="login-box">
+
+                <h class="title">Register</h>
+
+                <form class="" action="/userNew" method="post">
+                    <div class="spacingDiv">
+                        <input type="text" name="username" class="input" placeholder="New Username">
+                    </div>
+
+                    <br>
+                    
+                    <div class="spacingDiv">
+                        <input type="password" name="password" class="input" placeholder="Password">
+                    </div>
+
+                    <br>
+
+                    <input type="submit" name="registerBtn" value="Register">
+
+
+                </form>
+
+            </article>
+
+
         </section>
-        </section>
-        
-    </body>
-    
+    </section>
+
+</body>
+
 </html>
