@@ -17,7 +17,7 @@
 
 
 <body>
-
+    <!-- Navigation sidebar with links to all the pages -->
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
         <a href="index.html">Home</a>
@@ -26,10 +26,12 @@
         <a href="facts.html">Facts</a> 
     </div>
 
+    <!-- button that opens the nav bar -->
     <div id="main">
         <button class="openbtn" onclick="openNav()">☰</button>
     </div>
 
+    <!-- script for opening and closing the sidebar -->
     <script>
         function openNav() {
             document.getElementById("mySidebar").style.width = "250px";
@@ -57,7 +59,7 @@
             <article class="login-box">
 
                 <h class="title">Login</h>
-
+                <!-- Form for logging in as an existing user -->
                 <form class="" action="/userNew" method="post">
 
                     <div class="inputBorders">
@@ -65,37 +67,39 @@
                         <input type="text" name="username" class="input" placeholder="Username">
 
                     </div>
-                    
+
                     <br>
 
                     <div class="inputBorders">
-                        
+
                         <input type="password" name="password" class="input" placeholder="Password">
                     </div>
-                    
+
                     <br>
-                    
+
                     <input type="submit" class="loginBtn" value="Login">
 
                 </form>
 
             </article>
 
+            <!-- line between 2 forms to spread out the page -->
             <div class="vSeperator"></div>
 
+            
             <!-- Register -->
 
             <article class="login-box">
 
                 <h class="title">Register</h>
-
+                <!-- Form for registering as a new user -->
                 <form class="" action="/userNew" method="post">
                     <div class="inputBorders">
                         <input type="text" name="username" class="input" placeholder="New Username">
                     </div>
 
                     <br>
-                    
+
                     <div class="inputBorders">
                         <input type="password" name="password" class="input" placeholder="Password">
                     </div>
