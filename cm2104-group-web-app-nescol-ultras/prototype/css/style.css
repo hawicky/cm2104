@@ -12,9 +12,9 @@
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-
+    
   }
-
+  
   /* The sidebar links */
   .sidebar a {
     padding: 8px 8px 8px 32px;
@@ -24,12 +24,12 @@
     display: block;
     transition: 0.3s;
   }
-
+  
   /* When you mouse over the navigation links, change their color */
   .sidebar a:hover {
     color: #f1f1f1;
   }
-
+  
   /* Position and style the close button (top right corner) */
   .sidebar .closebtn {
     position: absolute;
@@ -38,7 +38,7 @@
     font-size: 36px;
     margin-left: 50px;
   }
-
+  
   /* The button used to open the sidebar */
   .openbtn {
     font-size: 20px;
@@ -48,17 +48,17 @@
     padding: 10px 15px;
     border: none;
   }
-
+  
   .openbtn:hover {
     background-color: #444;
   }
-
+  
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main {
     transition: margin-left .5s; /* If you want a transition effect */
     padding: 20px;
   }
-
+  
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
@@ -67,32 +67,22 @@
 
 
 .banner {
-
+   
     display:block;
     margin-left:auto;
     margin-right:auto;
     top: 0px;
-
-
+    z-index: -1;
+    
    }
-
-.heading {
-    display:block;
-    text-align:center;
-    font-family: 'Montserrat', serif ;
-    font-size: 50px;
-    color: white;
-}
 
 .subheading {
     display:block;
     text-align:center;
     font-family: 'Montserrat', serif ;
-    font-size: 32px;
+    font-size: 40px;
     color: white;
 }
-
-
 
 a {
     font-family: 'Montserrat', serif ;
@@ -106,50 +96,7 @@ p {
     color:white;
 }
 
-.asteroid {
-    display:block;
-    text-align:center;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:2%;
-    margin-bottom:2%;
 
-
-}
-
-.wrapper {
-    text-align:center;
-}
-
-
-.infobox {
-
-    display:inline-block;
-    width: 250px;
-    height: 200px;
-    border-radius:20px;
-    border: 2px solid white;
-    color: white;
-    margin:20px;
-    font-family: 'Montserrat', serif ;
-    font-size:24px;
-    text-align:center;
-    line-height:200px;
-}
-
-
-.info {
-
-    display:inline-block;
-    width:250px;
-    height:40px;
-    color:white;
-    margin-left:20px;
-    margin-right:20px;
-    font-family: 'Montserrat', serif ;
-    text-align:center;
-    font-size:20px;
-}
 
 
 
@@ -157,12 +104,9 @@ p {
 /*    login/register css     */
 
 .title {
-  font-size: 42px;
+  font-size: 32px;
   font-family: 'Montserrat', serif ;
   color:white;
-  align-items: center;
-  justify-content: center;
-
 }
 
 .login-section {
@@ -171,33 +115,38 @@ p {
   justify-content: center;
   align-items: center;
 }
+    
 
 
+.login-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
 
-.inputBorders {
+.spacingDiv {
   display: flex;
   align-items: center;
   height: 40px;
   border-style: solid;
-  border-radius: 100px;
-  border-color: #BFBFBF;
+  border-radius: 50px;
+  border-color: #ffffff;
   border-width: 1.5px;
   margin: 5px;
-  padding-left: 15px;
+  padding-left: 15px; 
 }
-
-
 
 
 /*  */
 /* vertical seperation */
 .vSeperator {
-  height: 250px;
-  border-left: 3px solid rgb(255, 255, 255);
-  border-left: 3px solid rgba(255, 255, 255, .5);
+  border-left: 2px solid #ffffff;
   margin-left: 60px;
   margin-right: 60px;
+  height: 250px;
 }
 
 /* horizontal seperation on login page */
@@ -343,87 +292,4 @@ p {
     
 
     font-family: 'Montserrat', serif ;
-}
-
-
-
-.input {
-  height: 80%;
-  background-color: transparent;
-  border: transparent;
-  outline: none;
-  color:white;
-  font-family: 'Montserrat', serif ;
-  font-size: 30px;
-}
-
-
-.login-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-
-input[type=submit] {
-
-  width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
-  outline:none;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Montserrat', serif ;
-  font-size: 30px;
-  background-color: transparent;
-  color: #FFFFFF;
-  border-radius: 50px;
-/*--------------------------------------------------------------------------------------------------------*/
-
-.FlipCard {
-  display:inline-block;
-  width: 250px;
-  height: 400px;
-  border-radius:20px;
-  border: 2px solid white;
-  color: white;
-  margin:20px;
-  font-family: 'Montserrat', serif ;
-  font-size:24px;
-  text-align:center;
-  line-height:200px;
-}
-
-.FlipCardIn {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.FlipCard:hover .FlipCardIn {
-  transform: rotateY(180deg);
-}
-
-.FlipCardFront, .FlipCardBack {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.FlipCardFront {
-
-  color: white;
-}
-
-.FlipCardBack {
-  color: white;
-  transform: rotateY(180deg);
 }
