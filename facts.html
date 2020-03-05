@@ -1,0 +1,110 @@
+<html class="no-js" lang="en">
+<!--the head is where the title and styles are linked and implemented -->
+    <head>
+         <!--standard English character set -->
+        <meta charset="utf-8">
+        <!--title tag implements the title of the page-->
+        <title>NEAR EARTH OBJECT TRACKER</title>
+        <!--add in the icon picture-->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!--links the character set for the css from the internet-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        
+        <!-- CSS Stylesheets -->
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+    <!--the body tag is where the main content of the page is implemented-->
+    <body>
+            <!--The sidebar is the main navagation of the page all the links to the other pages are here and allows the
+            the site to get onto any page from anywhere    -->
+            <div id="mySidebar" class="sidebar">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+              <a href="index.html">Home</a>
+              <a href="login.html">Register/Login</a>
+              <a href="#">More Info</a>
+            </div>
+            <!--Button to open the navagation bar-->
+            <div id="main">
+              <button class="openbtn" onclick="openNav()">☰</button>
+                
+                
+            </div>
+            <!--javascript is added here-->
+            <script>
+            //comment to open the navagation sidebar     
+            function openNav() {
+              //sets the width of the sidebar  
+              document.getElementById("mySidebar").style.width = "250px";
+              //sets the position of the sidebar  
+              document.getElementById("main").style.marginLeft = "250px";
+            }
+            //function to close the navagation sidebar
+            function closeNav() {
+              //sets the sidebar width to 0
+              document.getElementById("mySidebar").style.width = "0";
+              //sets the position of the sidebar
+              document.getElementById("main").style.marginLeft= "0";
+            }
+            
+            //sets up button so when clicked text appears
+            function myFunction() {
+              //when the button is clicked information about asteroids appears
+              document.getElementById("Asteroid").innerHTML = " Asteroids are small, rocky objects that orbit the Sun. The first asteroid was Ceres, discovered by Giuseppe Piazzi in 1801. There are currently over 600,000 known asteroids in our solar system. Most asteroids are found orbiting in the Asteroid Belt, a series of rings located between the orbits of Mars and Jupiter.";
+            }
+            
+            //sets up button so when clock text appears
+            function myFunction2() {
+              //when the button is clicked information about meteoroids appears
+              document.getElementById("Meteoroid").innerHTML = "A meteorite is a solid piece of debris from an object, such as a comet, asteroid, or meteoroid, that originated in outer space and survived its passage through the atmosphere to reach the surface of a planet or moon.";
+            }
+            </script>
+        
+        <!--the banner image is desplayed-->
+        <img src="images/NEOtracker.png" alt="NEO tracker banner" class="banner">
+        
+        <!--the div sets the css for the content inside the div-->
+        <div id="NEOdescription" class="subheading">
+            NASA Near Earth Object Tracker
+        </div>
+        
+          <div id="mainContent">
+              
+        </div>
+       
+        <!--the div sets the css for the content inside the div-->    
+        <div class = "divLeft">
+                <!--sets the css of the contents as factcontainer-->
+                <div class = "factContainer">
+                    <!--adds the image with the width of 100%-->
+                    <img src="Asteroid.jpg" alt="Snow" style="width:100%">
+                    <!--adds the button-->
+                    <button class ="btn" onclick="myFunction()">Click me</button> 
+                    <!--when the button is clicked the p tag is triggered-->
+                    <p id="Asteroid"></p>
+                </div>
+        </div>
+        <!--the div sets the css for the content inside the div-->
+        <div class = "divRight">
+            <!--sets the css as factcontainter2-->
+            <div class = "factContainer2">
+                <!--adds the image with the width of 100%-->
+                <img src="meteoroid.jpg" alt="Snow" style="width:100%">
+                <!--adds the button-->
+                <button class ="btn" onclick="myFunction2()">Click me</button>
+                <!--when the button is clicked the p tag is triggered-->
+                <p id = "Meteoroid"></p> 
+            </div>
+        </div>
+        
+
+        
+        <!--the div sets the css for the content inside the div-->
+        <div class = "factP">
+            <p id="Asteroid"></p>
+        </div>
+            
+        
+        </body>
+</html>

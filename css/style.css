@@ -1,0 +1,295 @@
+
+
+/* The sidebar menu */
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+
+.banner {
+   
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    top: 0px;
+    z-index: -1;
+    
+   }
+
+.subheading {
+    display:block;
+    text-align:center;
+    font-family: 'Montserrat', serif ;
+    font-size: 40px;
+    color: white;
+}
+
+a {
+    font-family: 'Montserrat', serif ;
+}
+
+body {
+    background:#000 url("http://www.script-tutorials.com/demos/360/images/stars.png");
+}
+
+p {
+    color:white;
+}
+
+
+
+
+
+
+/*    login/register css     */
+
+.title {
+  font-size: 32px;
+  font-family: 'Montserrat', serif ;
+  color:white;
+}
+
+.login-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+    
+
+
+.login-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.spacingDiv {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-style: solid;
+  border-radius: 50px;
+  border-color: #ffffff;
+  border-width: 1.5px;
+  margin: 5px;
+  padding-left: 15px; 
+}
+
+
+/*  */
+/* vertical seperation */
+.vSeperator {
+  border-left: 2px solid #ffffff;
+  margin-left: 60px;
+  margin-right: 60px;
+  height: 250px;
+}
+
+/* horizontal seperation on login page */
+.hSeperator {
+  margin-top: 150px;
+}
+
+/* css for fact page */
+
+/*sets the css for the class factwrapper */
+.factWrapper {
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+/*sets the css for the class factContainer */
+.factContainer {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  align-items:center;
+}
+
+/*sets the css for the class factContainer with the img tag */
+.factContainer img {
+  width: 100%;
+  height: auto;
+}
+
+/*sets the css for the class factContainer button tag */
+.factContainer .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/*sets the css for the class factContainer button when the button is hovered over */
+.factContainer .btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/*sets the css for the class factWrapper */
+.factWrapper {
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+/*sets the css for the class factContainer2 */
+.factContainer2 {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  align-items:center;
+}
+
+/*sets the css for the class factContainer2 with the img take */
+.factContainer2 img {
+  width: 100%;
+  height: auto;
+}
+
+/*sets the css for the class factContainer2 button tag */
+.factContainer2 .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+/*sets the css for the class factContainer2 button when the button is hovered over */
+.factContainer2 .btn:hover {
+  background-color: black;
+  color: white;
+}
+
+
+
+/*sets the css for the Asteroid*/
+.Asteroid {
+    grid-template-columns:30%;
+}
+
+.factP p {
+    color:white;
+    margin-left:60px;
+    width:20%;
+    font-family: 'Montserrat', serif ;
+}
+
+/*sets css for the divLeft tag which divides half the content to the left*/
+.divLeft {
+    width:50%;
+    float:left;
+}
+
+/*sets css for the factP class*/
+.factP p {
+    color:white;
+    margin-left:60px;
+    width:20%;
+    font-family: 'Montserrat', serif ;
+}
+
+/*sets css for the divRight tag which divides half the content to the right*/
+.divRight {
+    width:50%;
+    float:left;
+}
+
+/*sets css for the p tag in the divRight class*/
+.divRight p {
+    color:white;
+    
+
+    font-family: 'Montserrat', serif ;
+}
+
+/*sets css for the p tag in the divRight class*/
+.divLeft p {
+    color:white;
+    
+
+    font-family: 'Montserrat', serif ;
+}
