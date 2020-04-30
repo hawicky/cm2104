@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- header -->
+<head>
+  <%- include('../partials/head') %>
+  <script src="/js/countdown.js"></script>
+</head>
+
+<body>
+  <%- include('../partials/header') %>
+
+  <!-- earth and asteroid graphics -->
+  <main>
+    <article class="object-data">
+      <div class="earth-graphic"> <!-- div for the earth and orbit images -->
+        <img src="/images/spinningAsteroid.gif" class="asteroid" alt="spinning asteroid">
+        <img src="/images/earth.png" class="earth" alt="earth">
+      </div>
+
+      <h2>Soonest close approach object:</h2>
+      <h3>Time until approach:<br><span id="countdown"></span></h3>
+      <!-- countdown function for soonest close approach object -->
+      <script>initialiseTimer('<%= timeOfApproach %>')</script>
+
+      <!-- html to display close approach API data -->
+      <div class="flex-container"> <!-- container for API data -->
+        <% dataToRender.forEach(([label, value]) => { %>
+          <section class="object-data-item">
+            <h3><%= label %></h3>
+            <h4><%= value %></h4>
+          </section>
+        <% }) %>
+      </div>
+    </article>
+  </main>
+</body>
+
+</html>

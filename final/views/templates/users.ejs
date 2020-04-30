@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('../partials/head') %>
+  <script src="/js/login.js"></script>
+</head>
+
+<!-- main area of webpage -->
+<body>
+  <%- include('../partials/header') %>
+
+  <!-- login and users area -->
+  <main>
+    <article class="login"> <!-- login area -->
+      <form id="signup"> <!-- Registration Form -->
+        <div class="grid-wrapper">
+          <h3>Register</h3>
+
+          <div>
+            <label for="signup-username">Username </label>
+            
+            <input type="text" id="signup-username" placeholder="Username">
+          </div>
+
+          <div>
+            <label for="signup-password">Password </label>
+            <input type="password" id="signup-password" placeholder="Password">
+          </div>
+
+          <div>
+            <label for="signup-favouriteAsteroid">Favourite asteroid</label>
+            <input type="text" id="signup-favouriteAsteroid" placeholder="Asteroid">
+          </div>
+
+          <input type="submit" value="Register">
+          <!-- button for submitting the form to the database -->
+        </div>
+      </form>
+
+      <!-- login form -->
+      <form id="login">
+        <div class="grid-wrapper"> <!-- wrapper to keep the form nicely formatted -->
+          <h3>Login</h3>
+
+          <div>
+            <label for="login-username">Username</label>
+            <input type="text" id="login-username" placeholder="Username">
+          </div>
+
+          <div>
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" placeholder="Password">
+          </div>
+
+          <input type="submit" value="Login">
+        </div>
+      </form>
+
+      <input type="button" value="Logout" id="logout"></input>
+    </article>
+
+    <article class="users object-data"> <!-- This is the area that displays the registered users -->
+      
+      <h2>Users</h3>
+
+        <!-- Container for boxes displaying the registered users -->
+        <div class="flex-container">
+          <!-- Pulls data from the database to display the registered users with their username and fav asteroid -->
+          <% users.forEach(({username, favouriteAsteroid}) => { %>
+            <section class="user object-data-item">
+              <h3><%= username %></h3>
+              <h4>Favourite asteroid:<br><%= favouriteAsteroid %></h4>
+            </section>
+            <% }) %>
+          </div>
+        </article>
+      </main>
+    </body>
+
+    </html>
