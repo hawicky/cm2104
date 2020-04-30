@@ -15,12 +15,12 @@ Please also ensure you have MongoDB running on `mongodb://localhost:27017`.
   {
     "username": "aiden",
     "password": "test1",
-    "favouriteAsteroid": "Some rock"
+    "favouriteAsteroid": "Some asteroid"
   },
   {
     "username": "lewis",
     "password": "test2",
-    "favouriteAsteroid": "Another rock"
+    "favouriteAsteroid": "Another asteroid"
   }
 ```
   - Run `npm start` to run the server.
